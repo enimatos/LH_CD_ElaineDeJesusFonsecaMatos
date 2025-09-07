@@ -21,7 +21,8 @@ LH_CD_ElaineDeJesusFonsecaMatos/
 │
 ├── src/              
 │   ├── eda.py
-│   └── model.py
+|   ├── model.py
+│   └── predict.py
 │
 ├── README.md              # Explicação do projeto em Markdown
 └── requirements.txt       # Pacotes utilizados
