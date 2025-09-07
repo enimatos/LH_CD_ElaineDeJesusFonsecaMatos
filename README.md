@@ -66,12 +66,12 @@ python src/predict.py
 3. Insights da coluna Overview: 
 - Palavras-chave podem indicar o gênero. Ex: “battle”, “hero”, “space” sugerem Action/Sci-Fi.
 
-43. Como prever a nota do IMDB?
+4. Como prever a nota do IMDB?
 - Tipo de problema: Regressão
 - Variáveis: Meta_score, No_of_Votes, Gross
 
-54. Previsão para o filme exemplo: 
-- Com base nos dados disponíveis, o modelo estima um Meta_score próximo de 80, o que se alinha com a reputação do filme The Shawshank Redemption.
+5. Previsão para o filme exemplo: 
+-Com base nos dados disponíveis, o modelo estima um Meta_score próximo de 80, o que se alinha com a reputação do filme The Shawshank Redemption.
 
 🛠️ Ferramentas e Tecnologias
 - Python
