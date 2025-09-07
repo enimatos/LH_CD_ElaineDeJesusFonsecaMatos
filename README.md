@@ -6,24 +6,24 @@ Este projeto realiza uma **análise de dados de filmes**, para entender padrões
 ---
 
 ## 📂 Estrutura do projeto
-
+```
 LH_CD_ElaineDeJesusFonsecaMatos/
 │
-├── data/                  
-│   ├── desafio_indicium_imdb.csv   
-│   └── desafio_indicium_imdb-v2.csv
+├── data/
+│ ├── desafio_indicium_imdb.csv
+│ └── desafio_indicium_imdb-v2.csv
 │
-├── notebooks/             # Notebooks com a análise passo a passo
-│   ├── analise_inicial.ipynb
-│   └── visualizacoes.ipynb
+├── notebooks/ # Notebooks com a análise passo a passo
+│ ├── analise_inicial.ipynb
+│ └── visualizacoes.ipynb
 │
-├── scripts/               # Scripts Python para análise (opcional, se não usar notebooks)
-│   ├── analisar_dados.py
-│   └── gerar_graficos.py
+├── scripts/ # Scripts Python para análise (opcional, se não usar notebooks)
+│ ├── analisar_dados.py
+│ └── gerar_graficos.py
 │
-├── README.md              # Explicação do projeto em Markdown
-└── requirements.txt 
-
+├── README.md # Explicação do projeto em Markdown
+└── requirements.txt
+```
 
 
 ## Objetivo do Projeto
