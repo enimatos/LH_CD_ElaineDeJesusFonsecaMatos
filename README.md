@@ -1,60 +1,83 @@
 
-# 🎬 Desafio Cientista de Dados – Indicium / PProductions (IMB)
+# 🎬 Desafio Cientista de Dados – Indicium / PProductions (IMDB)
 
-Este projeto realiza uma **análise de dados de filmes**, para entender padrões e informações importantes sobre filmes, como notas, gêneros e popularidade.
-
+Este projeto tem como objetivo analisar dados de filmes e desenvolver um modelo preditivo para estimar a nota do IMDB, conforme o desafio proposto pela Indicium.
 ---
 
 ## 📂 Estrutura do projeto
+
 ```
 LH_CD_ElaineDeJesusFonsecaMatos/
 │
-├── data/
-│ ├── desafio_indicium_imdb.csv
-│ └── desafio_indicium_imdb-v2.csv
+├── data/                  
+│   ├── desafio_indicium_imdb.csv   # Base original (não utilizada diretamente)
+│   └── desafio_indicium_imdb-v2.csv # Base tratada
+|
+├── reports/              
+│   ├── eda_imdb.pdf     # Análise exploratória dos dados
 │
-├── notebooks/ # Notebooks com a análise passo a passo
-│ ├── analise_inicial.ipynb
-│ └── visualizacoes.ipynb
+├── models/             
+│   ├── imdb_rating_predictor.pkl   # Modelo treinado (.pkl)
 │
-├── scripts/ # Scripts Python para análise (opcional, se não usar notebooks)
-│ ├── analisar_dados.py
-│ └── gerar_graficos.py
+├── src/              
+│   ├── eda.py
+│   └── model.py
 │
-├── README.md # Explicação do projeto em Markdown
-└── requirements.txt
+├── README.md              # Explicação do projeto em Markdown
+└── requirements.txt       # Pacotes utilizados
 ```
 
+>>>>>>> 2ef5db3 (Subindo o trabalho)
 
-## Objetivo do Projeto
+---
 
-O objetivo é explorar os dados dos filmes e gerar informações úteis, como filmes mais bem avaliados, gêneros mais populares e tendências ao longo do tempo.
+## 🎯 Objetivo do Projeto
 
-## Como Funciona (Explicação Simples)
+Explorar os dados de filmes para gerar insights relevantes e desenvolver um modelo preditivo que auxilie na tomada de decisão sobre futuros lançamentos cinematográficos.
 
-1. **Coleta de Dados**: Pegamos informações dos filmes, como nome, gênero, nota e ano de lançamento.
-2. **Organização dos Dados**: Arrumamos os dados, tiramos informações que não são importantes e deixamos tudo organizado.
-3. **Análise**: Exploramos os dados para descobrir padrões e curiosidades sobre os filmes.
-4. **Resultados**: Criamos gráficos e tabelas para mostrar os resultados de forma clara e fácil de entender.
+---
 
-## Estrutura dos Arquivos
+## ⚙️ Como Executar
 
-- `data/` – Contém os dados dos filmes usados na análise.
-- `notebooks/` – Jupyter Notebooks com o passo a passo da análise.
-- `README.md` – Este arquivo com instruções e explicações do projeto.
+1. Instale os pacotes necessários:
+```bash
+pip install -r requirements.txt
+```
+2. Treine o modelo:
+```bash
+python src/model.py
+```
+3. Faça uma previsão com o modelo treinado:
+```bash
+python src/predict.py
+```
 
-## Como Usar
+🧠 Respostas ao Desafio
 
-1. Faça o download dos arquivos de dados.
-2. Abra o Jupyter Notebook ou rode os scripts em Python.
-3. Execute as células para ver como os dados foram analisados e quais informações foram encontradas.
+1. Qual filme você recomendaria para uma pessoa que você não conhece? 
+- Como não conhecemos o usuário, eu recomendaria filmes com as melhores notas.
 
-## Ferramentas e Tecnologias
+2. Quais fatores estão relacionados com alta expectativa de faturamento?
+- Número de votos
+- Gêneros populares
+- Presença de atores renomados
+- Diretores reconhecidos
 
+3. Insights da coluna Overview: 
+- Palavras-chave podem indicar o gênero. Ex: “battle”, “hero”, “space” sugerem Action/Sci-Fi.
+
+43. Como prever a nota do IMDB?
+- Tipo de problema: Regressão
+- Variáveis: Meta_score, No_of_Votes, Gross
+
+54. Previsão para o filme exemplo: 
+- Com base nos dados disponíveis, o modelo estima um Meta_score próximo de 80, o que se alinha com a reputação do filme The Shawshank Redemption.
+
+🛠️ Ferramentas e Tecnologias
 - Python
-- Pandas e NumPy (para manipular dados)
-- Matplotlib e Seaborn (para gráficos e visualizações)
+- Pandas e NumPy (manipulação de dados)
+- Scikit-learn (modelagem preditiva)
+- Matplotlib e Seaborn (visualizações, se aplicável)
 
-## Observações Finais
-
-Este projeto mostra como podemos explorar dados de filmes de forma simples, gerando informações interessantes e fáceis de entender.
+📬 Entrega
+Este projeto foi desenvolvido como parte do processo seletivo da Indicium. O repositório foi nomeado como LH_CD_ElaineDeJesusFonsecaMatos conforme solicitado.
